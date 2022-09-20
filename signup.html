@@ -31,6 +31,7 @@
     </tr>
   </table>
   <input type="submit" value="buat akun" onclick="create_acccount()" />
+  <input type="button" value="sudah punya akun " onClick="login() " />
   <script type="text/javascript">
     function create_acccount() {
       var n = document.getElementById("n1").value;
@@ -60,6 +61,10 @@
         );
         window.location = "https://www.javatpoint.com/";
       }
+    }
+
+    function login() {
+      window.location = "index.html ";
     }
   </script>
 </body>
