@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Login</title>
+</head>
+<body align="center">
+  <h1>Login</h1>
+  <form id="Login_form" onsubmit="submit_form()">
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+      <tr>
+        <td>Email</td>
+        <td><input type="text" placeholder="masukkan email" id="e1" /></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="text" placeholder="masukkan password" id="p1" /></td>
+      </tr>
+    </table>
+    <input type="submit" value="Login "/>
+    <input type="button" value="SignUp " onClick="create() " />
+  </form>
+
+  <script type="text/javascript ">
+    function submit_form() {
+      var e = document.getElementById("e1").value;
+      var p = document.getElementById("p1").value;
+      
+      if(e == "" || p == ""){
+        alert("masukkan data dengan lengkap!")
+      }else{
+        alert("berhasil masuk ke akun!");
+      }
+    }
+
+    function create() {
+      window.location = "signup.html ";
+    }
+  </script>
+</body>
+</html>
